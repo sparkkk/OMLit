@@ -3,8 +3,8 @@
         {
             "name": "Mac",
             "includePath": [
-                "${workspaceFolder}/src/*",
-                "${workspaceFolder}/src/include/**",
+                "${workspaceFolder}/test/*",
+                "${workspaceFolder}/omlit/include/**",
                 "/Users/sunty/repos/json/include/**"
             ],
             "defines": [],
@@ -19,8 +19,8 @@
         {
             "name": "MinGW",
             "includePath": [
-                "${workspaceFolder}/src/*",
-                "${workspaceFolder}/src/omlit/include/**"
+                "${workspaceFolder}/test/*",
+                "${workspaceFolder}/omlit/include/**"
             ],
             "defines": [],
             "compilerPath": "D:\\msys64\\mingw64\\bin\\gcc.exe",
