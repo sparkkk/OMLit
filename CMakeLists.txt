@@ -7,16 +7,15 @@ set(CMAKE_CXX_COMPILER "g++")
 
 file(
     GLOB source_files
-    "${CMAKE_SOURCE_DIR}/src/*.cpp"
-    "${CMAKE_SOURCE_DIR}/src/omlit/src/*.cpp"
-    "${CMAKE_SOURCE_DIR}/src/omlit/src/core/*.cpp"
-    "${CMAKE_SOURCE_DIR}/src/omlit/src/interface/*.cpp"
-    "${CMAKE_SOURCE_DIR}/src/omlit/src/lua/*.cpp"
+    "${CMAKE_SOURCE_DIR}/omlit/core/*.cpp"
+    "${CMAKE_SOURCE_DIR}/omlit/interface/*.cpp"
+    "${CMAKE_SOURCE_DIR}/omlit/lua/*.cpp"
+    "${CMAKE_SOURCE_DIR}/test/*.cpp"
 )
 
 include_directories(
-    "${CMAKE_SOURCE_DIR}/src"
-    "${CMAKE_SOURCE_DIR}/src/omlit/include"
+    "${CMAKE_SOURCE_DIR}/test"
+    "${CMAKE_SOURCE_DIR}/omlit/include"
 )
 
 add_compile_options(-std=c++17 -g)
